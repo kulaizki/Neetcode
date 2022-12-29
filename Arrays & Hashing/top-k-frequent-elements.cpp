@@ -18,11 +18,11 @@ class Solution {
 public:
     vector<int> topKFrequent(vector<int>& nums, int k) {
         unordered_map<int,int> m;   
-        for(int ele: nums)
+        for(int ele : nums)
             m[ele]+=1;
 
         priority_queue<node,vector<node>,compare> heap;
-        for(auto it: m)
+        for(auto it : m)
             heap.push(node(it.first,it.second));
         
         vector<int> ans;
