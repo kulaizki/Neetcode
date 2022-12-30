@@ -1,11 +1,13 @@
 #include <iostream>
 #include <vector>
+#include <unordered_map>
 
 using namespace std;
 
 int main()
 {
-    vector<int> nothing;
+    unordered_map<int, int> h;
+    h[27] = 14;
 
-    cout << nothing.size();
+    cout << h[27];
 }
