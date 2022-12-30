@@ -20,7 +20,7 @@ int main()
     vector<int> v {2,7,11,15};
     int target = 9;
     vector<int> ans = twoSum(v, target);
-    for (int i : ans) cout << i << '\t';
+    for (int i : ans) cout << i << ' ';
 
     return 0;
 }
